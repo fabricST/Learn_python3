@@ -1,15 +1,15 @@
 # Напишите программу, которая запрашивает ввод двух значений.
 # Если хотя бы одно из них не является числом (любым), то должна выполняться конкатенация, т. е. соединение, строк.
 # В остальных случаях введённые числа суммируются.
-# a = input("Input first number: ")
-# b = input("Input second number: ")
-# try:
-#     a = int(a)
-#     b = int(b)
-#     c = a + b
-#     print(c)
-# except:
-#     a = str(a)
-#     b = str(b)
-#     c = a + b
-#     print(c)
+a = input("Input first number: ")
+b = input("Input second number: ")
+try:
+    a = int(a)
+    b = int(b)
+    c = a + b
+    print(c)
+except:
+    a = str(a)
+    b = str(b)
+    c = a + b
+    print(c)
