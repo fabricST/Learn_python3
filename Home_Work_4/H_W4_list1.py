@@ -20,34 +20,33 @@
 # strings where the string length is 2 or more and the firs
 # and last chars of the string are the same.
 # Note: python does not have a ++ operator, but += works.
-def match_ends (a):
+
+
+def match_ends(a):
     count = 0
     for i in a:
         if len(i) >= 2 and i[0] == i[-1]:
             count = count + 1
-
     return count
 
 
-
-# B. front_x
+#  B.front_x
 # Given a list of strings, return a list with the strings
 # in sorted order, except group all the strings that begin with 'x' first.
 # e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
 # ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
 # Hint: this can be done by making 2 lists and sorting each of them
 # before combining them.
+
+
 def front_x(words):
     a = []
     b = []
     for i in words:
         if i[0] == i[0]:
-          a += i
-
-
-
+            a += i
     return
-front_x(("ddcdcewccd",'ttgvc', 'sreedfr', 'ddd', "loiktj", "dddew"))
+
 
 # C. sort_last
 # Given a list of non-empty tuples, return a list sorted in increasing
@@ -55,6 +54,8 @@ front_x(("ddcdcewccd",'ttgvc', 'sreedfr', 'ddd', "loiktj", "dddew"))
 # e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
 # [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
 # Hint: use sorted() function and a custom key= function to extract the last element form each tuple.
+
+
 def sort_last(tuples):
     # +++your code here+++
     return
@@ -62,6 +63,8 @@ def sort_last(tuples):
 
 # Simple provided test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
+
+
 def test(got, expected):
     if got == expected:
         prefix = ' OK '
@@ -71,6 +74,8 @@ def test(got, expected):
 
 
 # Calls the above functions with interesting inputs.
+
+
 def main():
     print('match_ends')
     test(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']), 3)
@@ -96,7 +101,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
 
 # from Learn_python3.Home_Work_4.H_W4_P1 import song
 #

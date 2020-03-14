@@ -4,8 +4,3 @@
 
 x = input("Enter the correct text:")
 print(x[(len(x) + 1) // 2:] + x[:(len(x) + 1) // 2])
-
-
-
-
-
