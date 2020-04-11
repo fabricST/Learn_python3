@@ -6,8 +6,8 @@ import smtplib
 
 smtp_object = smtplib.SMTP('smtp.gmail.com', 587)
 smtp_object.starttls()
-smtp_object.login('storchak.eugene@gmail.com', 'Cnjhxfr2323')
+smtp_object.login('storchak.eugene@gmail.com', '******')
 smtp_object.sendmail(from_addr="storchak.eugene@gmail.com",
                      to_addrs="Y.g.novoselova@gmail.com",
-                     msg="I love you my dear Yana and I want you to be happy every day and every moment")
+                     msg="test abc")
 smtp_object.quit()
